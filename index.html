@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rayane Touré - Portfolio</title>
+
+    <style>
+        /* -------------------- */
+        /* STYLE GENERAL */
+        /* -------------------- */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #31408ff0;
+            color: rgb(1, 2, 10);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+
+        /* -------------------- */
+        /* MENU */
+        /* -------------------- */
+
+        nav {
+            background-color: #121a2e;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #6ee7b7;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #6ee7b7;
+        }
+
+
+        /* -------------------- */
+        /* ACCUEIL */
+        /* -------------------- */
+
+        .accueil {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .accueil h1 {
+            font-size: 70px;
+            margin: 10px 0;
+        }
+
+        .sous-titre {
+            color: #6ee7b7;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #aab4d0;
+            font-size: 20px;
+            max-width: 700px;
+        }
+
+        .bouton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: 1px solid #6ee7b7;
+            border-radius: 8px;
+            color: #6ee7b7;
+        }
+
+        .bouton:hover {
+            background-color: #6ee7b7;
+            color: #0b1020;
+        }
+
+
+        /* -------------------- */
+        /* SECTIONS */
+        /* -------------------- */
+
+        section {
+            padding: 70px 0;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+
+        /* -------------------- */
+        /* CARTES */
+        /* -------------------- */
+
+        .card {
+            background-color: #121a2e;
+            border: 1px solid #26304a;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #6ee7b7;
+        }
+
+        .texte-gris {
+            color: #aab4d0;
+        }
+
+
+        /* -------------------- */
+        /* PROJETS */
+        /* -------------------- */
+
+        .projets {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+
+        /* -------------------- */
+        /* COMPETENCES */
+        /* -------------------- */
+
+        .competences {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .competence {
+            border: 1px solid #26304a;
+            border-radius: 20px;
+            padding: 8px 15px;
+            color: #aab4d0;
+        }
+
+
+        /* -------------------- */
+        /* FOOTER */
+        /* -------------------- */
+
+        footer {
+            border-top: 1px solid #26304a;
+            padding: 30px;
+            text-align: center;
+            color: #aab4d0;
+        }
+
+
+        /* -------------------- */
+        /* TELEPHONE */
+        /* -------------------- */
+
+        @media (max-width: 700px) {
+
+            .projets {
+                grid-template-columns: 1fr;
+            }
+
+            .accueil h1 {
+                font-size: 45px;
+            }
+
+            nav .container {
+                display: block;
+            }
+
+            nav a {
+                display: inline-block;
+                margin-top: 10px;
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+        img {
+    margin-left: 800px;
+}
+    </style>
+</head>
+
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <div class="container">
+
+            <div class="logo">
+                
+            </div>
+
+            <div>
+                <a href="#apropos">À propos</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#projets">Projets</a>
+                <a href="#competences">Compétences</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ACCUEIL -->
+    <header class="accueil">
+
+        <div class="container">
+
+            <p class="sous-titre">
+                ÉTUDIANT • CYBERSÉCURITÉ • BORDEAUX
+            </p>
+<img src="Capture d'écran 2026-10-08 221438.png" alt="photo de Rayane touré" width="150">
+            <h1>
+                Rayane Touré
+            </h1>
+
+            <p class="description">
+                Étudiant en Bachelor Cybersécurité à Ynov Campus Bordeaux.
+                Je développe mes compétences en programmation, développement
+                web et informatique à travers différents projets.
+            </p>
+
+            <a class="bouton" href="#projets">
+                Voir mes projets
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- A PROPOS -->
+        <section id="apropos">
+
+            <div class="container">
+
+                <h2>
+                    À propos
+                </h2>
+
+                <div class="card">
+
+                    <p>
+                        Après une première année en management à l'ESSCA,
+                        j'ai choisi de me réorienter vers la cybersécurité.
+                    </p>
+
+                    <p class="texte-gris">
+                        Cette nouvelle orientation correspond davantage
+                        à mes intérêts et à mon projet professionnel.
+                        Je souhaite développer mes compétences en informatique
+                        et acquérir de l'expérience dans le domaine.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARCOURS -->
+        <section id="parcours">
+
+            <div class="container">
+
+                <h2>
+                    Mon parcours
+                </h2>
+
+                <div class="card">
+
+                    <h3>
+                        2026 - Aujourd'hui
+                    </h3>
+
+                    <h4>
+                        Ynov Campus Bordeaux
+                    </h4>
+
+                    <p class="texte-gris">
+                        Bachelor Cybersécurité
+                    </p>
+
+                    <p>
+                        Formation en cybersécurité, programmation,
+                        développement web et réalisation de projets.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        2025 - 2026
+                    </h3>
+
+                    <h4>
+                        ESSCA
+                    </h4>
+
+                    <p class="texte-gris">
+                        Management
+                    </p>
+
+                    <p>
+                        Une année d'études en management avant ma
+                        réorientation vers l'informatique.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        2024 - 2025
+                    </h3>
+                    <h4>
+                        Lycée international Claire Fontaine 
+                    </h4>
+                    <h4>
+                        Baccalauréat
+                    </h4>
+
+                    <p>
+                        Obtention du baccalauréat.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJETS -->
+        <section id="projets">
+
+            <div class="container">
+
+                <h2>
+                    Projets et expériences
+                </h2>
+
+
+                <div class="projets">
+
+                    <!-- PROJET GO -->
+                    <div class="card">
+
+                        <h3>
+                            Projet RED - Adventure
+                        </h3>
+
+                        <p class="texte-gris">
+                            Projet de jeu réalisé en Go.
+                        </p>
+
+                        <p>
+                            Le projet comprend la création d'un personnage,
+                            l'exploration, des PNJ, un inventaire,
+                            un marchand et un système de combat.
+                        </p>
+
+                    </div>
+
+
+                    <!-- HTML CSS -->
+                    <div class="card">
+
+                        <h3>
+                            Développement Web
+                        </h3>
+
+                        <p class="texte-gris">
+                            HTML et CSS
+                        </p>
+
+                        <p>
+                            Création de pages web avec navigation,
+                            tableaux, sections, cartes, mise en forme
+                            et responsive design.
+                        </p>
+
+                    </div>
+
+
+                    <!-- KING JOUET -->
+                    <div class="card">
+
+                        <h3>
+                            Stage - King Jouet
+                        </h3>
+
+                        <p>
+                            Accueil et conseil des clients,
+                            mise en rayon, rangement, réassort
+                            et organisation des espaces de vente.
+                        </p>
+
+                    </div>
+
+
+                    <!-- CNPS -->
+                    <div class="card">
+
+                        <h3>
+                            Expérience - CNPS
+                        </h3>
+
+                        <p>
+                            Classement de dossiers, saisie informatique,
+                            préparation de documents et assistance
+                            informatique.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPETENCES -->
+        <section id="competences">
+
+            <div class="container">
+
+                <h2>
+                    Mes compétences
+                </h2>
+
+                <div class="card">
+
+                    <div class="competences">
+
+                        <span class="competence">Go</span>
+
+                        <span class="competence">HTML</span>
+
+                        <span class="competence">CSS</span>
+
+                        <span class="competence">Git</span>
+
+                        <span class="competence">
+                            Développement Web
+                        </span>
+
+                        <span class="competence">
+                            Programmation
+                        </span>
+
+                        <span class="competence">
+                            Travail en équipe
+                        </span>
+
+                        <span class="competence">
+                            Organisation
+                        </span>
+
+                        <span class="competence">
+                            Ponctualité
+                        </span>
+
+                        <span class="competence">
+                            Anglais
+                        </span>
+
+                        <span class="competence">
+                            Espagnol
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OBJECTIF -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    Mon objectif
+                </h2>
+
+                <div class="card">
+
+                    <p>
+                        Je souhaite continuer à développer mes compétences
+                        en informatique et en cybersécurité.
+                    </p>
+
+                    <p>
+                        Mon objectif est de trouver un stage en informatique
+                        ou en cybersécurité afin de mettre en pratique mes
+                        connaissances et d'acquérir une première expérience
+                        professionnelle.
+                    </p>
+
+                    <p class="sous-titre">
+                        Stage recherché : Juin 2027
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Rayane Touré - Portfolio
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
